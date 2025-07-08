@@ -8,13 +8,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    // <div className="flex flex-col min-h-screen bg-[url('/scattered-bg.svg')] bg-fixed bg-cover bg-no-repeat text-gray-800 dark:text-white">
-    <div className="flex flex-col min-h-screen 
-    bg-[url('/scattered-white-bg.svg')] 
-    dark:bg-[url('/scattered-dark-bg.svg')] 
-    bg-fixed bg-cover bg-no-repeat 
-    text-gray-800 dark:text-white
-    bg-white dark:bg-gray-900">
+    // <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#f0f4f8] via-white to-[#e2e8f0] dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-white">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#e6f5ea] via-[#f7fff9] to-[#d2f1dc] dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-white">
       <BrowserRouter>
         <Navbar />
         <main className="flex-grow">

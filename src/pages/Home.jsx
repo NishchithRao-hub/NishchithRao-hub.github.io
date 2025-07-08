@@ -5,25 +5,26 @@ import { Typewriter } from "react-simple-typewriter";
 const Home = () => {
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 space-y-16">
+    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
       
       {/* Top Section: Profile + Intro */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto"> */}
         {/* Profile Image */}
         <div className="flex justify-center md:justify-start">
           <img
             src="/Website_DP.jpeg"
             alt="Profile"
-            className="w-48 h-48 rounded-full border-4 border-blue-500 shadow-lg"
+            className="w-56 h-56 rounded-full border-4 border-blue-500 shadow-lg"
           />
         </div>
 
         {/* Name & Typewriter */}
-        <div className="md:col-span-2 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-white mb-2">
+        <div className="md:col-span-2 flex flex-col justify-center md:items-start text-center md:text-left">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-white mb-2">
             Nishchith Rao Palimar Raghupathi
           </h1>
-          <h2 className="text-xl sm:text-2xl text-blue-600 dark:text-blue-400 mb-6">
+          <h2 className="text-xl sm:text-2xl text-blue-600 dark:text-blue-400">
             <Typewriter
               words={[
                 "Masters in Computer Science Student at Northeastern University",
@@ -43,8 +44,8 @@ const Home = () => {
       </div>
 
       {/* Intro Paragraphs */}
-      <div className="text-gray-700 dark:text-gray-300 max-w-5xl mx-auto text-justify space-y-4 leading-relaxed px-2">
-        <p>
+      <div className="text-gray-700 dark:text-gray-300 max-w-5xl mx-auto md:pl-28 px-4 space-y-4 leading-relaxed text-justify">
+      <p>
           Passionate about solving complex problems through innovative solutions, I’m a Master’s in Computer Science student at Northeastern University, specializing in AI, Machine Learning, and backend development. With hands-on experience as an Associate Software Engineer at Capgemini, I contributed to optimizing network systems, achieving measurable performance gains.
         </p>
         <p>
@@ -96,7 +97,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <label className="block text-gray-700 dark:text-gray-300 mb-1">Email</label>
+            <label className="block text-gray-700 dark:text-gray-300 mb-1">To Email</label>
             <input
               type="email"
               name="email"
