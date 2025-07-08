@@ -1,2 +1,2 @@
 # NishchithRao-hub.github.io
-Personal Website repo
+This is my personal website repo built using React and Tailwind CSS.
